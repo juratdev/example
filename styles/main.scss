@@ -1,0 +1,119 @@
+@import '__fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #061437 0%, #000000 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+
+    &-text {
+      text-align: center;
+
+      h2 {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 82px;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin-top: -20px;
+        font-weight: 200;
+        font-size: 90px;
+        font-family: 'Roboto', sans-serif;
+        background: 
+        Linear Gradient
+        rgba(255, 255, 255, 1)
+        rgba(255, 255, 255, 0);
+      }
+    }
+
+    &-image {
+      width: 1200px;
+      margin-top: -30px;
+
+      img {
+        width: 100%;
+        mix-blend-mode: screen;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+
+    &-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+
+      img{
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      img:hover {
+        transform: scale(1.2);
+      }
+
+      .one {
+        margin-top: 5px;
+        margin-bottom: 8px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        opacity: 0.5;
+      }
+
+      .two {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        color: #FFFFFF;
+        opacity: 0.8;
+      }
+    }
+  }
+}
